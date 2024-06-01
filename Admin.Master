@@ -1,0 +1,186 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Online_booking_information_system.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+      <style>
+            * 
+            {
+   
+    
+               box-sizing: border-box;
+            }
+
+
+            body 
+            {
+                   font-family: Arial;
+                    padding: 10px;
+                    background: white;
+            }
+
+/* Header/Blog Title */
+            .header 
+            {
+                padding: 30px;
+                    text-align: center;
+                background: orange;
+            }           
+
+        .header h1 
+        {
+            font-size: 50px;
+        }
+
+            /* Style the top navigation bar */
+            .topnav 
+            {
+                overflow: hidden;
+                background-color: white;
+            }
+    
+            /* Style the topnav links */
+            .topnav a 
+            {
+                 float: left;
+                 display: block;
+                 color: white;
+                 text-align: center;
+                 padding: 14px 16px;
+                  text-decoration: none;
+            }
+
+/* Change color on hover */
+        .topnav a:hover 
+        {
+            background-color: white;
+             color: black;
+        }
+
+
+/* Footer */
+            .footer 
+            {
+                     padding: 20px;
+                        text-align: center;
+                        background: #ddd;
+                margin-top: 20px;
+            }
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px)
+        {
+          .leftcolumn, .rightcolumn 
+          {   
+              width: 100%;
+              padding: 0;
+          }
+        }
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+             .topnav a {
+                  float: none;
+                  width: 100%;
+             }
+        }
+
+            .auto-style3 {
+                overflow: hidden;
+                background-color: orangered;
+                height: 226px;
+                width: 1335px;
+                 border: 2px solid black;
+                border-radius: 5px;
+                padding: 5px;
+              margin-left: 225px;
+          }
+
+            div.gallery
+            {
+                 margin: 5px;
+                 border: 1px solid #ccc;
+                 float: left;
+                  width: 180px;
+                   border: 2px solid black;
+                border-radius: 5px;
+                padding: 5px; 
+            }
+
+            div.gallery:hover 
+            {
+                   border: 1px solid #777;
+
+            }
+
+            div.gallery img
+            {
+                 width: 100%;
+                 height: auto;
+            }
+
+            div.desc
+            {
+                 padding: 15px;
+                 text-align: center;
+            }
+             p.round1 
+             {
+                     border: 2px solid red;
+                     border-radius: 5px;
+                        padding: 5px;
+             }
+       
+             </style>
+    </head>
+<body style="height: 689px">
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="head" runat="server">
+            <div class="header">
+       &nbsp;
+       <asp:Label ID="Label1" runat="server" Text="Informatiomn System" Font-Size="XX-Large"></asp:Label>
+                           <br />           <br />
+                <div class="auto-style3" style="background-color: #FFFFFF">
+ 
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="125px" ImageUrl="~/image/1.jpg" Width="158px" PostBackUrl="~/add_city.aspx" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton2" runat="server" Height="116px" ImageUrl="~/image/2.jpg" Width="150px" PostBackUrl="~/Add_area.aspx" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton3" runat="server" Height="122px" ImageUrl="~/image/3.png" Width="139px" PostBackUrl="~/Add_offer.aspx" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton4" runat="server" Height="116px" ImageUrl="~/image/4.png" Width="137px" PostBackUrl="~/Add_hotel_info.aspx" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton5" runat="server" Height="122px" ImageUrl="~/image/5.jpg" Width="147px" PostBackUrl="~/View_Feedback.aspx" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton6" runat="server" Height="130px" ImageUrl="~/image/6.jpg" Width="135px" PostBackUrl="~/report.aspx" />
+                    <br />
+                    ||&nbsp;&nbsp; &nbsp;
+       <asp:Label ID="Label2" runat="server" Text="Add City" Font-Size="Small"  ForeColor="#FF6600"></asp:Label>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+       <asp:Label ID="Label3" runat="server" Text="Add Area" Font-Size="Small"  ForeColor="#FF6600"></asp:Label>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+       <asp:Label ID="Label4" runat="server" Text="Add Offer" Font-Size="Small" ForeColor="#FF6600"></asp:Label>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+       <asp:Label ID="Label5" runat="server" Text="Add Hotel" Font-Size="Small" ForeColor="#FF6600"></asp:Label>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <asp:Label ID="Label6" runat="server" Text="View Feedback" Font-Size="Small" ForeColor="#FF6600"></asp:Label>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <asp:Label ID="Label7" runat="server" Text="Manage report" Font-Size="Small"  ForeColor="#FF6600"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    ||<br />
+                    <br />
+                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True" Font-Size="Large" Font-Underline="False" OnClick="Page_Load" OnClientClick="return confirm('Are You Sure To LOGOUT')" PostBackUrl="~/1.aspx">LOGOUT</asp:LinkButton>
+                </div>
+
+        </div>
+        </asp:ContentPlaceHolder>
+   
+ 
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </form>
+</body>
+ 
+</html>

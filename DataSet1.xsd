@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="feedback" msprop:Generator_TableClassName="feedbackDataTable" msprop:Generator_TableVarName="tablefeedback" msprop:Generator_TablePropName="feedback" msprop:Generator_RowDeletingName="feedbackRowDeleting" msprop:Generator_RowChangingName="feedbackRowChanging" msprop:Generator_RowEvHandlerName="feedbackRowChangeEventHandler" msprop:Generator_RowDeletedName="feedbackRowDeleted" msprop:Generator_UserTableName="feedback" msprop:Generator_RowChangedName="feedbackRowChanged" msprop:Generator_RowEvArgName="feedbackRowChangeEvent" msprop:Generator_RowClassName="feedbackRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Viewer_name" msprop:Generator_ColumnVarNameInTable="columnViewer_name" msprop:Generator_ColumnPropNameInRow="Viewer_name" msprop:Generator_ColumnPropNameInTable="Viewer_nameColumn" msprop:Generator_UserColumnName="Viewer_name" type="xs:string" minOccurs="0" />
+              <xs:element name="email_id" msprop:Generator_ColumnVarNameInTable="columnemail_id" msprop:Generator_ColumnPropNameInRow="email_id" msprop:Generator_ColumnPropNameInTable="email_idColumn" msprop:Generator_UserColumnName="email_id" type="xs:string" minOccurs="0" />
+              <xs:element name="Feedback_Date" msprop:Generator_ColumnVarNameInTable="columnFeedback_Date" msprop:Generator_ColumnPropNameInRow="Feedback_Date" msprop:Generator_ColumnPropNameInTable="Feedback_DateColumn" msprop:Generator_UserColumnName="Feedback_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Feedback_Description" msprop:Generator_ColumnVarNameInTable="columnFeedback_Description" msprop:Generator_ColumnPropNameInRow="Feedback_Description" msprop:Generator_ColumnPropNameInTable="Feedback_DescriptionColumn" msprop:Generator_UserColumnName="Feedback_Description" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
